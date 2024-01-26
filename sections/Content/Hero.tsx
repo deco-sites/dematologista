@@ -1,28 +1,28 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts"
+import Image from "apps/website/components/Image.tsx"
 
 export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  variant: "Normal" | "Reverse";
+  id?: string
+  href: string
+  text: string
+  variant: "Normal" | "Reverse"
 }
 
 export interface Props {
   /**
    * @format html
    */
-  title: string;
-  description: string;
-  image?: ImageWidget;
-  placement: "left" | "right";
-  cta: CTA[];
+  title: string
+  description: string
+  image?: ImageWidget
+  placement: "left" | "right"
+  cta: CTA[]
 }
 
 const PLACEMENT = {
   left: "flex-col text-left lg:flex-row-reverse",
   right: "flex-col text-left lg:flex-row",
-};
+}
 
 export default function HeroFlats({
   title,
@@ -64,8 +64,7 @@ export default function HeroFlats({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            >
-            </div>
+            ></div>
             <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
               {description}
             </p>
@@ -82,8 +81,7 @@ export default function HeroFlats({
                       : "bg-accent text-black"
                   }`}
                 >
-                  <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-                  </span>
+                  <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
                   <span class="relative font-medium lg:text-[20px]">
                     {item?.text}
                   </span>
@@ -94,5 +92,5 @@ export default function HeroFlats({
         </div>
       </div>
     </div>
-  );
+  )
 }
