@@ -20,7 +20,7 @@ function Navbar({
       {/* Mobile Version */}
       <div
         style={{ height: navbarHeight }}
-        class="lg:hidden flex justify-between items-center w-full shadow-md rounded-md px-8 gap-2 max-w-[95%] mx-auto mt-4"
+        class="lg:hidden flex justify-between items-center w-full shadow-md rounded-md px-8 gap-2 max-w-[95%] lg:max-w-[1320px] mx-auto mt-4"
       >
         {logo && (
           <a
@@ -41,7 +41,7 @@ function Navbar({
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden lg:flex lg:max-w-7xl lg:mx-auto lg:mt-4 shadow-md rounded-md justify-between items-center w-full px-6">
+      <div class="hidden lg:flex max-w-[95%] lg:max-w-[1320px] lg:mx-auto lg:mt-4 shadow-md rounded-xl justify-between items-center w-full px-6">
         <div class={`flex`}>
           {logo && (
             <a href="/" aria-label="Store logo" class="block">
