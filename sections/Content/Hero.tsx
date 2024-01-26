@@ -25,7 +25,7 @@ export default function HeroFlats({
   cta,
 }: Props) {
   return (
-    <div class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16">
+    <div class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12">
       <div class="lg:flex max-w-[540px] mx-auto lg:max-w-full gap-8">
         <div class="flex flex-col w-full">
           <span class="text-secondary text-base mb-4 font-medium">{tag}</span>

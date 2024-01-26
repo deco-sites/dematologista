@@ -1,56 +1,74 @@
-import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts"
+import Image from "apps/website/components/Image.tsx"
 
-/**
- * @titleBy title
- */
-export interface Card {
-  icon?: AvailableIcons;
-  /**
-   * @format html
-   */
-  title: string;
-  text: string;
+export interface CTA {
+  id?: string
+  href: string
+  iconId?: string
+  text: string
 }
 
 export interface Props {
-  title?: string;
-  cards: Card[];
+  tag?: string
+  title: string
+  description?: string
+  image?: ImageWidget
+  additionalInfo?: string
 }
 
-function FeatureCard({ icon, title, text }: Card) {
+export default function Features({
+  title,
+  description,
+  image,
+  tag,
+  additionalInfo,
+}: Props) {
   return (
-    <div class="feature-card group group-hover:-translate-y-3">
-      {icon && (
-        <div class="p-6 rounded-full bg-white text-[#1A1A1A]">
-          <Icon id={icon} size={48} />
+    <section class="relative">
+      <div class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12 py-12 z-[10] relative ">
+        <div class="flex flex-col lg:flex-row max-w-[540px] mx-auto lg:max-w-full gap-8">
+          <div class="flex justify-center w-full order-2 lg:order-1">
+            {image && (
+              <Image
+                width={640}
+                src={image}
+                alt={image}
+                decoding="async"
+                loading="lazy"
+                class="rounded-tl-[2rem] rounded-br-[2rem] shadow-xl object-cover"
+              />
+            )}
+          </div>
+
+          <div class="flex flex-col w-full order-1 lg:order-1">
+            <span class="text-secondary text-base mb-4 font-medium">{tag}</span>
+            <h1
+              class="text-black font-regular mb-4 leading-[1.2] title"
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
+            />
+            <p
+              class="mb-4"
+              dangerouslySetInnerHTML={{
+                __html: description,
+              }}
+            />
+
+            <span class="text-secondary text-base mb-4 font-medium">
+              {additionalInfo}
+            </span>
+          </div>
         </div>
-      )}
-      <div class="space-y-4 text-center">
-        {title && (
-          <div
-            class="text-2xl font-semibold leading-[110%]"
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-        )}
-        <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
       </div>
-    </div>
-  );
-}
 
-export default function Features({ title, cards }: Props) {
-  return (
-    <section class="relative bg-white text-black py-20 max-w-screen">
-      <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
-        {title && (
-          <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10">
-            {title}
-          </h2>
-        )}
-        <div class="features">
-          {cards?.map((card) => <FeatureCard {...card} />)}
-        </div>
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[9] clip-path-bg ">
+        <img
+          src="https://carolinamartinsdermatologia.com/img/Fundo.webp"
+          alt=""
+          class="jaralax-img"
+        />
       </div>
     </section>
-  );
+  )
 }

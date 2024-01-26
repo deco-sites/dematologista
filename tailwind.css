@@ -52,6 +52,27 @@
   font-size: calc(1.25rem + 3.5vw);
 }
 
+.clip-path-bg {
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+}
+
+.jaralax-image {
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 1556px;
+  height: 912.8px;
+  overflow: hidden;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  margin-top: 22.6px;
+  transform: translate3d(0px, 32px, 0px);
+}
+
 @keyframes progress-frame {
   0% {
     --dot-progress: 0%
