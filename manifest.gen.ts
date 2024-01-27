@@ -21,37 +21,38 @@ import * as $$$$$$13 from "./sections/Product/ImageGalleryFrontBack.tsx";
 import * as $$$$$$14 from "./sections/Contact.tsx";
 import * as $$$$$$15 from "./sections/Links/LinkTree.tsx";
 import * as $$$$$$16 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$17 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$18 from "./sections/Services.tsx";
-import * as $$$$$$19 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$20 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$21 from "./sections/Layout/Container.tsx";
-import * as $$$$$$22 from "./sections/Layout/GridItem.tsx";
-import * as $$$$$$23 from "./sections/Layout/Flex.tsx";
-import * as $$$$$$24 from "./sections/Layout/Grid.tsx";
-import * as $$$$$$25 from "./sections/Animation/Animation.tsx";
-import * as $$$$$$26 from "./sections/Gallery.tsx";
-import * as $$$$$$27 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$28 from "./sections/Location.tsx";
-import * as $$$$$$29 from "./sections/Content/Features.tsx";
-import * as $$$$$$30 from "./sections/Content/ImageSection.tsx";
-import * as $$$$$$31 from "./sections/Content/Faq.tsx";
-import * as $$$$$$32 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$33 from "./sections/Content/Table.tsx";
-import * as $$$$$$34 from "./sections/Content/BlogPosts.tsx";
-import * as $$$$$$35 from "./sections/Content/Logos.tsx";
-import * as $$$$$$36 from "./sections/Content/RichText.tsx";
-import * as $$$$$$37 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$38 from "./sections/Content/CallToAction.tsx";
-import * as $$$$$$39 from "./sections/Content/Hero.tsx";
-import * as $$$$$$40 from "./sections/Header/Header.tsx";
-import * as $$$$$$41 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$42 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$43 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$44 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$45 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$46 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$47 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$17 from "./sections/Content.tsx";
+import * as $$$$$$18 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$19 from "./sections/Services.tsx";
+import * as $$$$$$20 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$21 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$22 from "./sections/Layout/Container.tsx";
+import * as $$$$$$23 from "./sections/Layout/GridItem.tsx";
+import * as $$$$$$24 from "./sections/Layout/Flex.tsx";
+import * as $$$$$$25 from "./sections/Layout/Grid.tsx";
+import * as $$$$$$26 from "./sections/Animation/Animation.tsx";
+import * as $$$$$$27 from "./sections/Gallery.tsx";
+import * as $$$$$$28 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$29 from "./sections/Location.tsx";
+import * as $$$$$$30 from "./sections/Content/Features.tsx";
+import * as $$$$$$31 from "./sections/Content/ImageSection.tsx";
+import * as $$$$$$32 from "./sections/Content/Faq.tsx";
+import * as $$$$$$33 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$34 from "./sections/Content/Table.tsx";
+import * as $$$$$$35 from "./sections/Content/BlogPosts.tsx";
+import * as $$$$$$36 from "./sections/Content/Logos.tsx";
+import * as $$$$$$37 from "./sections/Content/RichText.tsx";
+import * as $$$$$$38 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$39 from "./sections/Content/CallToAction.tsx";
+import * as $$$$$$40 from "./sections/Content/Hero.tsx";
+import * as $$$$$$41 from "./sections/Header/Header.tsx";
+import * as $$$$$$42 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$43 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$44 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$45 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$46 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$47 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$48 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -61,42 +62,43 @@ const manifest = {
     "deco-sites/dematologista/loaders/List/Sections.tsx": $$$0,
   },
   "sections": {
-    "deco-sites/dematologista/sections/Animation/Animation.tsx": $$$$$$25,
-    "deco-sites/dematologista/sections/Category/CategoryBanner.tsx": $$$$$$47,
-    "deco-sites/dematologista/sections/Category/CategoryGrid.tsx": $$$$$$45,
-    "deco-sites/dematologista/sections/Category/CategoryList.tsx": $$$$$$46,
+    "deco-sites/dematologista/sections/Animation/Animation.tsx": $$$$$$26,
+    "deco-sites/dematologista/sections/Category/CategoryBanner.tsx": $$$$$$48,
+    "deco-sites/dematologista/sections/Category/CategoryGrid.tsx": $$$$$$46,
+    "deco-sites/dematologista/sections/Category/CategoryList.tsx": $$$$$$47,
     "deco-sites/dematologista/sections/Contact.tsx": $$$$$$14,
-    "deco-sites/dematologista/sections/Content/Benefits.tsx": $$$$$$32,
-    "deco-sites/dematologista/sections/Content/BlogPosts.tsx": $$$$$$34,
-    "deco-sites/dematologista/sections/Content/CallToAction.tsx": $$$$$$38,
-    "deco-sites/dematologista/sections/Content/Faq.tsx": $$$$$$31,
-    "deco-sites/dematologista/sections/Content/Features.tsx": $$$$$$29,
-    "deco-sites/dematologista/sections/Content/Hero.tsx": $$$$$$39,
-    "deco-sites/dematologista/sections/Content/ImageSection.tsx": $$$$$$30,
-    "deco-sites/dematologista/sections/Content/Logos.tsx": $$$$$$35,
-    "deco-sites/dematologista/sections/Content/RichText.tsx": $$$$$$36,
-    "deco-sites/dematologista/sections/Content/Table.tsx": $$$$$$33,
-    "deco-sites/dematologista/sections/Content/Testimonials.tsx": $$$$$$37,
+    "deco-sites/dematologista/sections/Content.tsx": $$$$$$17,
+    "deco-sites/dematologista/sections/Content/Benefits.tsx": $$$$$$33,
+    "deco-sites/dematologista/sections/Content/BlogPosts.tsx": $$$$$$35,
+    "deco-sites/dematologista/sections/Content/CallToAction.tsx": $$$$$$39,
+    "deco-sites/dematologista/sections/Content/Faq.tsx": $$$$$$32,
+    "deco-sites/dematologista/sections/Content/Features.tsx": $$$$$$30,
+    "deco-sites/dematologista/sections/Content/Hero.tsx": $$$$$$40,
+    "deco-sites/dematologista/sections/Content/ImageSection.tsx": $$$$$$31,
+    "deco-sites/dematologista/sections/Content/Logos.tsx": $$$$$$36,
+    "deco-sites/dematologista/sections/Content/RichText.tsx": $$$$$$37,
+    "deco-sites/dematologista/sections/Content/Table.tsx": $$$$$$34,
+    "deco-sites/dematologista/sections/Content/Testimonials.tsx": $$$$$$38,
     "deco-sites/dematologista/sections/Footer/Footer.tsx": $$$$$$0,
-    "deco-sites/dematologista/sections/Gallery.tsx": $$$$$$26,
-    "deco-sites/dematologista/sections/Header/Header.tsx": $$$$$$40,
-    "deco-sites/dematologista/sections/Images/BannerGrid.tsx": $$$$$$44,
-    "deco-sites/dematologista/sections/Images/Carousel.tsx": $$$$$$42,
-    "deco-sites/dematologista/sections/Images/ImageGallery.tsx": $$$$$$43,
-    "deco-sites/dematologista/sections/Images/ShoppableBanner.tsx": $$$$$$41,
-    "deco-sites/dematologista/sections/Layout/Container.tsx": $$$$$$21,
-    "deco-sites/dematologista/sections/Layout/Flex.tsx": $$$$$$23,
-    "deco-sites/dematologista/sections/Layout/Grid.tsx": $$$$$$24,
-    "deco-sites/dematologista/sections/Layout/GridItem.tsx": $$$$$$22,
+    "deco-sites/dematologista/sections/Gallery.tsx": $$$$$$27,
+    "deco-sites/dematologista/sections/Header/Header.tsx": $$$$$$41,
+    "deco-sites/dematologista/sections/Images/BannerGrid.tsx": $$$$$$45,
+    "deco-sites/dematologista/sections/Images/Carousel.tsx": $$$$$$43,
+    "deco-sites/dematologista/sections/Images/ImageGallery.tsx": $$$$$$44,
+    "deco-sites/dematologista/sections/Images/ShoppableBanner.tsx": $$$$$$42,
+    "deco-sites/dematologista/sections/Layout/Container.tsx": $$$$$$22,
+    "deco-sites/dematologista/sections/Layout/Flex.tsx": $$$$$$24,
+    "deco-sites/dematologista/sections/Layout/Grid.tsx": $$$$$$25,
+    "deco-sites/dematologista/sections/Layout/GridItem.tsx": $$$$$$23,
     "deco-sites/dematologista/sections/Links/LinkTree.tsx": $$$$$$15,
     "deco-sites/dematologista/sections/Links/Shortcuts.tsx": $$$$$$16,
-    "deco-sites/dematologista/sections/Location.tsx": $$$$$$28,
+    "deco-sites/dematologista/sections/Location.tsx": $$$$$$29,
     "deco-sites/dematologista/sections/Miscellaneous/CampaignTimer.tsx":
       $$$$$$2,
     "deco-sites/dematologista/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$1,
     "deco-sites/dematologista/sections/Miscellaneous/Slide.tsx": $$$$$$3,
-    "deco-sites/dematologista/sections/Newsletter/Newsletter.tsx": $$$$$$17,
+    "deco-sites/dematologista/sections/Newsletter/Newsletter.tsx": $$$$$$18,
     "deco-sites/dematologista/sections/Product/ImageGalleryFrontBack.tsx":
       $$$$$$13,
     "deco-sites/dematologista/sections/Product/ImageGallerySlider.tsx": $$$$$$9,
@@ -109,10 +111,10 @@ const manifest = {
     "deco-sites/dematologista/sections/Product/SearchResult.tsx": $$$$$$10,
     "deco-sites/dematologista/sections/Product/ShelfWithImage.tsx": $$$$$$8,
     "deco-sites/dematologista/sections/Product/Wishlist.tsx": $$$$$$12,
-    "deco-sites/dematologista/sections/Services.tsx": $$$$$$18,
-    "deco-sites/dematologista/sections/Social/InstagramPosts.tsx": $$$$$$19,
-    "deco-sites/dematologista/sections/Social/WhatsApp.tsx": $$$$$$20,
-    "deco-sites/dematologista/sections/Theme/Theme.tsx": $$$$$$27,
+    "deco-sites/dematologista/sections/Services.tsx": $$$$$$19,
+    "deco-sites/dematologista/sections/Social/InstagramPosts.tsx": $$$$$$20,
+    "deco-sites/dematologista/sections/Social/WhatsApp.tsx": $$$$$$21,
+    "deco-sites/dematologista/sections/Theme/Theme.tsx": $$$$$$28,
   },
   "apps": {
     "deco-sites/dematologista/apps/decohub.ts": $$$$$$$$$$$0,
