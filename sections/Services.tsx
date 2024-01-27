@@ -35,11 +35,11 @@ export default function Services({ title, services, tag }: Props) {
               />
             </div>
             <div class="flex-1 mb-2">
-              <h4 class="service-title text-text font-medium">
+              <h4 class="service-title text-info font-medium">
                 {service.title}
               </h4>
               <div
-                class="text-text text-base"
+                class="text-info text-base"
                 dangerouslySetInnerHTML={{ __html: service.description }}
               />
             </div>

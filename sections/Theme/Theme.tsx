@@ -32,7 +32,7 @@ export interface ThemeColors {
   /** @format color */
   info?: string
   /** @format color */
-  text?: string
+  textHover: string
 }
 
 export interface ComplementaryColors {

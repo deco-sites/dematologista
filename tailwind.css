@@ -65,6 +65,14 @@
   font-size: calc(1.3rem + .6vw);
 }
 
+.contact-title {
+  @media (min-width: 1200px) {
+    font-size: 4rem;
+  }
+
+  font-size: calc(1.575rem + 3.9vw);
+}
+
 .jaralax-image {
   object-fit: cover;
   object-position: 50% 50%;
