@@ -61,6 +61,13 @@
   grid-template-columns: 70px 1fr;
 }
 
+.grid-location {
+  @media (min-width: 1200px) {
+    grid-template-columns: 300px 1fr;
+  }
+  grid-template-columns: 70px 1fr;
+}
+
 .service-title {
   font-size: calc(1.3rem + .6vw);
 }
