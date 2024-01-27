@@ -25,7 +25,7 @@ export default function Features({
 }: Props) {
   return (
     <section class="relative">
-      <div class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12 py-12 z-[10] relative ">
+      <div class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12 py-12 z-[10] relative">
         <div class="flex flex-col lg:flex-row max-w-[540px] mx-auto lg:max-w-full gap-8">
           <div class="flex justify-center w-full order-2 lg:order-1">
             {image && (

@@ -52,8 +52,17 @@
   font-size: calc(1.25rem + 3.5vw);
 }
 
+
 .clip-path-bg {
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+}
+
+.grid-service {
+  grid-template-columns: 70px 1fr;
+}
+
+.service-title {
+  font-size: calc(1.3rem + .6vw);
 }
 
 .jaralax-image {

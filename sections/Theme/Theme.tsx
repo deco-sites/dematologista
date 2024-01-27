@@ -31,6 +31,8 @@ export interface ThemeColors {
   error?: string
   /** @format color */
   info?: string
+  /** @format color */
+  text?: string
 }
 
 export interface ComplementaryColors {
