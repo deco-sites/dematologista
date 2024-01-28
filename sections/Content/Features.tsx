@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts"
 import Image from "apps/website/components/Image.tsx"
+import Animation from "../Animation/Animation.tsx"
 
 export interface CTA {
   id?: string
@@ -24,7 +25,7 @@ export default function Features({
   additionalInfo,
 }: Props) {
   return (
-    <section class="relative">
+    <section class="relative" id="sobre">
       <div class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12 py-12 z-[10] relative">
         <div class="flex flex-col lg:flex-row max-w-[540px] mx-auto lg:max-w-full gap-8">
           <div class="flex justify-center w-full order-2 lg:order-1">

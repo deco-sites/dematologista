@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts"
 import Image from "apps/website/components/Image.tsx"
+import Animation from "./Animation/Animation.tsx"
 
 interface ServiceProps {
   title: string
@@ -15,7 +16,10 @@ export interface Props {
 
 export default function Services({ title, services, tag }: Props) {
   return (
-    <section class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12">
+    <section
+      class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto mt-16 mb-12"
+      id="servicos"
+    >
       <span class="text-secondary text-base mb-4 font-medium">{tag}</span>
       <h3
         class="text-black font-regular mb-4 leading-[1.2] title"

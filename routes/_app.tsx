@@ -31,13 +31,6 @@ export default defineApp(async (_req, ctx) => {
           rel="stylesheet"
         />
 
-        <link
-          href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css"
-          rel="stylesheet"
-        />
-
-        <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>

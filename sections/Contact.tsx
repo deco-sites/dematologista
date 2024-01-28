@@ -1,4 +1,5 @@
 import Icon from "$store/components/ui/Icon.tsx"
+import Animation from "./Animation/Animation.tsx"
 
 export interface CTA {
   id?: string
@@ -15,7 +16,10 @@ export interface Props {
 
 export default function Contact({ title, description, cta }: Props) {
   return (
-    <section class="w-full max-w-[95%] lg:max-w-[795px] mx-auto mb-12 rounded-tr-[2rem] rounded-bl-[2rem] bg-primary text-white pt-12 px-8 pb-6 flex flex-col items-center">
+    <section
+      id="contato"
+      class="w-full max-w-[95%] lg:max-w-[795px] mx-auto mb-12 rounded-tr-[2rem] rounded-bl-[2rem] bg-primary text-white pt-12 px-8 pb-6 flex flex-col items-center"
+    >
       <h3 class="contact-title text-white text-center font-light mb-2">
         {title}
       </h3>

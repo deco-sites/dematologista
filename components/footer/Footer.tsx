@@ -26,20 +26,20 @@ function Footer({ internalLinks, items, logo, social }: Props) {
   return (
     <footer class="shadow-2xl flex flex-col items-center pt-6 pb-12">
       <section class="w-full max-w-[95%] lg:max-w-[1320px] mx-auto">
-        <div class="flex flex-col items-center lg:flex-row lg:justify-between">
+        <div class="grid grid-cols-1 lg:grid-cols-3 items-center lg:flex-row lg:justify-between">
           <Image
             src={logo}
             alt={logo}
-            class="max-w-[200px] flex-[1 0 0%] items-center  flex"
+            class="max-w-[200px] items-center  flex"
           />
 
-          <div class="flex flex-col items-center  text-center lg:flex-row lg:gap-8 flex-[1 0 0%]">
+          <div class="flex flex-col items-center text-center lg:flex-row lg:gap-8 justify-center">
             {items?.map((item) => (
               <NavItem item={item} />
             ))}
           </div>
 
-          <div class="flex items-center flex-[1 0 0%]">
+          <div class="flex items-center justify-self-end">
             {social?.map((item) => (
               <a href={item.link}>
                 <Icon id={item.iconId} width={32} height={32} />
