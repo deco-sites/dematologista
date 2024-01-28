@@ -1,15 +1,15 @@
-import { useId } from "$store/sdk/useId.ts";
-import { useSignal } from "@preact/signals";
-import { ComponentChildren } from "preact";
-import { useEffect } from "preact/hooks";
+import { useId } from "$store/sdk/useId.ts"
+import { useSignal } from "@preact/signals"
+import { ComponentChildren } from "preact"
+import { useEffect } from "preact/hooks"
 
 interface Props {
-  onClose?: () => void;
-  open?: boolean;
-  class?: string;
-  loading?: "eager" | "lazy";
-  children: ComponentChildren;
-  aside: ComponentChildren;
+  onClose?: () => void
+  open?: boolean
+  class?: string
+  loading?: "eager" | "lazy"
+  children: ComponentChildren
+  aside: ComponentChildren
 }
 
 function Drawer(props: Props) {
@@ -20,45 +20,32 @@ function Drawer(props: Props) {
     onClose,
     class: _class = "",
     loading = "lazy",
-  } = props;
-  const lazy = useSignal(loading === "lazy" && !open);
-  const id = useId();
+  } = props
+  const lazy = useSignal(loading === "lazy" && !open)
+  const id = useId()
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) =>
-      (e.key === "Escape" || e.keyCode === 27) && open && onClose?.();
+      (e.key === "Escape" || e.keyCode === 27) && open && onClose?.()
 
-    addEventListener("keydown", handler);
+    addEventListener("keydown", handler)
 
     return () => {
-      removeEventListener("keydown", handler);
-    };
-  }, [open]);
+      removeEventListener("keydown", handler)
+    }
+  }, [open])
 
   useEffect(() => {
-    lazy.value = false;
-  }, []);
+    lazy.value = false
+  }, [])
 
   return (
-    <div class={`drawer ${_class}`}>
-      <input
-        id={id}
-        checked={open}
-        type="checkbox"
-        class="drawer-toggle"
-        onChange={(e) => e.currentTarget.checked === false && onClose?.()}
-      />
+    <div class={`${_class}`}>
+      <div>{children}</div>
 
-      <div class="drawer-content">
-        {children}
-      </div>
-
-      <aside class="drawer-side h-full z-50 overflow-hidden">
-        <label for={id} class="drawer-overlay" />
-        {!lazy.value && aside}
-      </aside>
+      <aside>{!lazy.value && aside}</aside>
     </div>
-  );
+  )
 }
 
-export default Drawer;
+export default Drawer

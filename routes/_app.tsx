@@ -1,15 +1,19 @@
-import { asset, Head } from "$fresh/runtime.ts";
-import { defineApp } from "$fresh/server.ts";
-import Theme from "$store/sections/Theme/Theme.tsx";
-import { Context } from "deco/deco.ts";
+import { asset, Head } from "$fresh/runtime.ts"
+import { defineApp } from "$fresh/server.ts"
+import Theme from "$store/sections/Theme/Theme.tsx"
+import { Context } from "deco/deco.ts"
 
 const sw = () =>
-  addEventListener("load", () =>
-    navigator && navigator.serviceWorker &&
-    navigator.serviceWorker.register("/sw.js"));
+  addEventListener(
+    "load",
+    () =>
+      navigator &&
+      navigator.serviceWorker &&
+      navigator.serviceWorker.register("/sw.js")
+  )
 
 export default defineApp(async (_req, ctx) => {
-  const revision = await Context.active().release?.revision();
+  const revision = await Context.active().release?.revision()
 
   return (
     <>
@@ -27,6 +31,13 @@ export default defineApp(async (_req, ctx) => {
           rel="stylesheet"
         />
 
+        <link
+          href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css"
+          rel="stylesheet"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>
@@ -40,5 +51,5 @@ export default defineApp(async (_req, ctx) => {
         dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
       />
     </>
-  );
-});
+  )
+})

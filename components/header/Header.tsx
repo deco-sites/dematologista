@@ -49,8 +49,8 @@ function Header({
 
   return (
     <>
-      <header style={{ height: headerHeight }}>
-        <Drawers menu={{ items }} platform={platform}>
+      <header style={{ height: headerHeight }} class="relative">
+        <Drawers menu={{ items, cta }} platform={platform}>
           <div class="bg-base-100 absolute w-full z-50">
             <Navbar items={items} logo={logo} cta={cta} />
           </div>

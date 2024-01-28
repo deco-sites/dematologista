@@ -46,7 +46,7 @@ export default function HeroFlats({
               <a
                 id={item.id}
                 href={item.href}
-                class="max-w-[180px] flex justify-center items-center bg-primary rounded-full text-white gap-1 py-3 px-8 hover:cursor-pointer transition-all hover:bg-primary"
+                class="max-w-[180px] flex justify-center items-center bg-primary rounded-full text-white gap-1 py-3 px-8 hover:cursor-pointer transition-all hover:bg-info"
               >
                 {item?.iconId && (
                   <Icon id={item.iconId} width={16} height={16} />

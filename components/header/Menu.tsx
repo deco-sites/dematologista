@@ -1,82 +1,55 @@
-import Icon from "$store/components/ui/Icon.tsx";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import type { SiteNavigationElement } from "apps/commerce/types.ts"
+import Icon from "$store/components/ui/Icon.tsx"
 
 export interface Props {
-  items: SiteNavigationElement[];
+  items: SiteNavigationElement[]
+  cta?: { text: string; href: string; iconId?: string }
 }
 
 function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
-    <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <div class="collapse-title">{item.name}</div>
-      <div class="collapse-content">
-        <ul>
-          <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
-          </li>
-          {item.children?.map((node) => (
-            <li>
-              <MenuItem item={node} />
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div
+      class={`gap-6 items-center bg-white flex flex-col justify-center w-full max-w-[95%] mx-auto shadow-xl py-2`}
+    >
+      <li class="flex items-center">
+        <a href={item.url}>
+          <span class="text-base font-thin transition-all hover:text-[#363738]">
+            {item.name}
+          </span>
+        </a>
+      </li>
     </div>
-  );
+  )
 }
 
-function Menu({ items }: Props) {
+function Menu({ items, cta }: Props) {
   return (
-    <div class="flex flex-col h-full">
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200">
+    <div class="flex flex-col absolute top-24 w-full justify-center">
+      <ul class="flex-grow flex flex-col">
         {items.map((item) => (
           <li>
             <MenuItem item={item} />
           </li>
         ))}
-      </ul>
 
-      <ul class="flex flex-col py-2 bg-base-200">
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="Heart" size={24} strokeWidth={2} />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="MapPin" size={24} strokeWidth={2} />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="Phone" size={24} strokeWidth={2} />
-            <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="User" size={24} strokeWidth={2} />
-            <span class="text-sm">Minha conta</span>
-          </a>
-        </li>
+        <div
+          class={`gap-6 items-center bg-white flex flex-col justify-center w-full max-w-[95%] mx-auto shadow-xl py-2`}
+        >
+          <li class="flex items-center">
+            {cta && (
+              <a
+                href={cta.href}
+                class="flex justify-center items-center max-w-[160px] mx-auto bg-[#80756E] rounded-full text-white gap-1 py-3 px-8 hover:cursor-pointer transition-all hover:bg-[#363738]"
+              >
+                {cta.iconId && <Icon id={cta.iconId} width={16} height={16} />}
+                <span>{cta.text}</span>
+              </a>
+            )}
+          </li>
+        </div>
       </ul>
     </div>
-  );
+  )
 }
 
-export default Menu;
+export default Menu

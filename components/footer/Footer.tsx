@@ -56,7 +56,7 @@ function Footer({ internalLinks, items, logo, social }: Props) {
                   <Image src={logo} alt={logo} class="max-w-[120px]" />
                 ) : (
                   <a
-                    class="text-base font-thin transition-all hover:text-[#363738]"
+                    class="text-base text-center font-thin transition-all hover:text-[#363738]"
                     href={link.link}
                   >
                     {link.text}
